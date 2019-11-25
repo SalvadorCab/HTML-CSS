@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(149,155,168);  
+  padding: 0px;
+}
+
+h1 {
+  font-family: "Arial";
+}
+
+p {
+  font-family: "Arial";
+  
+}
+
+li {font-family: "Comic Sans ms"; font-size:17px}
+
+#center {
+  text-align: center;
+}
+
+.leftdiv{
+  border: 1px solid rgb(0, 0, 0); 
+  width: 15%; 
+  float: left; 
+  padding: 10px; 
+  position: fixed; 
+  background-color: rgb(171,180,209); 
+}
+
+.centraldiv{ 
+  width: 65%; 
+  margin: auto;   
+  padding: 10px;
+}
+
+.images {
+  width: 25%; 
+}
+
