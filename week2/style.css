@@ -1,0 +1,98 @@
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+img { box-sizing: content-box; }
+
+
+body {
+    background-color: rgb(200,200,27);
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+li {
+	
+}
+
+#grid-flex {
+	padding: 0px;
+	list-style-type: none;   /* Remove the bullets from the list */
+	display: flex;
+	align-items:stretch;    /* Stretch each row to have the sime height */
+    justify-content: space-evenly;  /* Spaces from all sides are the same */
+	Flex-wrap: wrap; 
+	flex: 1 0 auto;
+	align-self: flex-start;
+}
+
+.grid-item {
+	border-width: 2px;
+	border-color: rgb(240, 240, 50);
+	border-style: solid;
+	padding: 5px;
+	margin-top: 15px;
+	background-color: rgb(230, 245, 30);
+	border-radius: 25px;  /* Rounded corners */
+	
+	word-wrap: break-word;    /* It breaks a word if it is longer than the container width */
+}
+
+.grid-item img {
+	width: 50%;	
+}
+
+.grid-item:hover {
+	background-color: rgb(88, 182, 65);
+}
+
+/* RESPONSIVENESS*/
+/* Mobile phones */
+@media screen and (max-width: 450px) {
+    .grid-item img {
+		width: 50%;	
+	}
+
+	.grid-item:nth-child(1) {
+		width: 98%;
+	}
+
+	.grid-item:nth-child(n+2) {
+		width: 48%;
+	}
+}
+
+/* RESPONSIVENESS*/
+/* TABLETS */
+@media screen and (min-width: 451px) and (max-width: 800px) {
+    .grid-item img {
+		width: 40%;	
+	}
+
+	.grid-item:nth-child(1), .grid-item:nth-child(2){
+		width: 47%;
+	}
+
+	.grid-item:nth-child(n+3) {
+		width: 30.5%;
+	}
+}
+
+/* RESPONSIVENESS*/
+/* LARGER SCREENS */
+@media screen and (min-width: 801px) {
+    .grid-item img {
+		width: 30%;	
+	}
+
+	.grid-item:nth-child(1){
+		width: 47%;
+	}
+	
+
+	.grid-item:nth-child(n+2) {
+		width: 22.5%;
+	}
+}
+
+
