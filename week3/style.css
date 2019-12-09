@@ -1,0 +1,107 @@
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+img { box-sizing: content-box; }
+
+
+body {
+	padding: 0px;
+	margin: 0px;
+    background-color: rgb(200,200,27);
+	background-image: url("images/Background.jpg");
+}
+
+h1 {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	background-image: url("images/H1bg.jpg");
+	color: white;
+}
+
+h2 {
+	color: black;
+	text-align: center;
+}
+
+#grid-flex {
+	padding: 0px;
+	list-style-type: none;   /* Remove the bullets from the list */
+	display: flex;
+	align-items:stretch;    /* Stretch each row to have the sime height */
+    justify-content: space-evenly;  /* Spaces from all sides are the same */
+	Flex-wrap: wrap; 
+	flex: 1 0 auto;
+	align-self: flex-start;
+}
+
+.grid-item {
+	background-image: url("images/Block_bg.jpg");
+	text-align: center;
+	border-width: 2px;
+	border-color: rgb(115, 103, 83);
+	border-style: solid;
+	padding: 5px;
+	margin-top: 15px;
+	border-radius: 25px;  /* Rounded corners */
+	
+	word-wrap: break-word;    /* It breaks a word if it is longer than the container width */
+}
+
+.grid-item img {
+		width: 100%;	
+}
+	
+.grid-item:hover {
+	border-color: rgb(220, 159, 54);
+}
+
+.topic-titles{
+	background-image: url("images/H3bg.jpg");
+	color: white;
+	text-align: center;
+}
+
+.topic-div p {
+	padding: 2%;
+}
+
+.topic-div img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.footer-div img {
+	padding-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+	
+/* RESPONSIVENESS*/
+/* Mobile phones */
+@media screen and (max-width: 450px) {
+	.grid-item {
+		width: 90%;
+	}
+}
+
+/* RESPONSIVENESS*/
+/* TABLETS */
+@media screen and (min-width: 451px) and (max-width: 800px) {
+	.grid-item{
+		width: 45%;
+	}
+}
+
+/* RESPONSIVENESS*/
+/* LARGER SCREENS */
+@media screen and (min-width: 801px) {
+	.grid-item{
+		width: 30%;
+	}
+}
+
+
