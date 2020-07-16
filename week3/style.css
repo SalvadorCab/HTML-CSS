@@ -23,6 +23,18 @@ h2 {
 	text-align: center;
 }
 
+p {
+	font-family: "Times New Roman", Times, "Alternate System Font", serif;
+	font-weight: bold;
+	font-size: large;
+}
+
+li {
+	font-family: "Candara", Times, "Alternate System Font", serif;
+	font-weight: bold;
+	font-size: large;
+}
+
 #grid-flex {
 	padding: 0px;
 	list-style-type: none;   /* Remove the bullets from the list */
@@ -32,6 +44,10 @@ h2 {
 	Flex-wrap: wrap; 
 	flex: 1 0 auto;
 	align-self: flex-start;
+}
+
+.logo {
+	border-radius: 10px;
 }
 
 .grid-item {
